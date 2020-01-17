@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Proteccion Sismica Mexico</title>
+    <meta name="description" content="sismos." />
+    <meta name="keywords" content="3d, layout, html, css, bending, javascript, demo" />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="img/logo2.png" />
+    
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/follow.css" />
+    <script>
+    document.documentElement.className = "js";
+    var supportsCssVars = function() {
+        var e,
+            t = document.createElement("style");
+        return (
+            (t.innerHTML = "root: { --tmp-var: bold; }"),
+            document.head.appendChild(t),
+            (e = !!(
+                window.CSS &&
+                window.CSS.supports &&
+                window.CSS.supports("font-weight", "var(--tmp-var)")
+            )),
+            t.parentNode.removeChild(t),
+            e
+        );
+    };
+    supportsCssVars() ||
+        alert(
+            "Please view this demo in a modern browser that supports CSS Variables."
+        );
+    </script>
+</head>
+
+<body class="demo-4 loading">
+    <main>
+        <div class="message">Some message for mobile (if needed).</div>
+        <div class="frame">
+           <img src="img/logo.png" alt="" style="max-width: 250px;">
+            <div class="frame__links">
+               
+            </div>
+            <div class="frame__demos">
+               
+                <a href="https://www.facebook.com/proteccionsismicamexico/" class="frame__demo"> <img src="img/logofaceb.png" alt="" style="max-width: 50px;"></a>
+               
+            </div>
+        </div>
+        <div class="content">
+            <div class="fold-content" id="base-content">
+                <!-- CONTENT INSIDE HERE -->
+                <h2 class="content__headline">NUESTRA PAGINA SE ENCUENTRA EN CONSTRUCCION</h2> <h6>pero les mostramos un poco de informacion de lo que asemos</h6>
+                <h1>Protección Sísmica de México es representante exclusivo en México de la empresa italiana FIP industriale.</h1>
+                <p class="content__type">
+                    FIP Industriale se enorgullece en haber contribuído al desarrollo de dispositivos antisísmicos, en particular
+                    de aisladores y amortiguadores en los últimos 40 años. En los años 70, FIP Industriale proyectó y produjo
+                    dispositivos antisísmicos para el primer puente con estructura aislada sísmicamente en Europa, el viaducto
+                    Somplago de la autopista Udine-Tarvisio.
+                </p>
+                <img class="content__img" src="img/18.jpg" alt="Some image" />
+                <h1 class="content__headline"> FIP Industriale posee uno de los más grandes laboratorios de Europa en su tipo, equipado con una mesa de pruebas  de 8.000 toneladas  y varios equipos para pruebas dinámicas que utilizan un sistema de energía hidráulica de 680 kW.</h1>
+                <p class="content__type">
+                    La calidad de sus dispositivos es tal que los amortiguadores de fluido viscoso y los deslizadores en superficie plana con amortiguadores histeréticos de acero fueron ensayados con éxito en California, de acuerdo con el protocolo HITEC de Estados Unidos. Vale la pena señalar también las pruebas llevadas a cabo en las instalaciones del laboratorio para dispositivos de respuesta sísmica modificada (SRMD) del Departamento de Transorte de California (Caltrans), en la Universidad de San Diego. Allí fueron ensayados los amortiguadores de fluido viscoso para el puente RionAntiron (Grecia) y el puente Lauriero (Portugal). 
+                </p>
+                <img class="content__img" src="img/19.jpg" alt="Some image" />
+                <h1 class="content__headline">CÓMO FUNCIONA esta tecnologia ??</h1>
+                <p class="content__type">
+                   
+                </p>
+                <h2 class="content__headline">Edificio ordinario</h2>
+                <img class="content__img" src="img/20.jpg" alt="Some image" />
+               
+                <p class="content__type">
+                 
+                </p> <h2 class="content__headline">Edificio Aislado</h2>
+                <img class="content__img" src="img/21.jpg" alt="Some image" />
+               
+                <p class="content__type">
+                  
+                </p>
+            </div>
+            <div class="screen">
+                <div class="folds" id="folds">
+                    <div class="fold fold-center" id="fold-center"></div>
+                    <div class="fold-3d fold-3d-top top-wrapper">
+                        <div class="fold fold-top" id="fold-top"></div>
+                    </div>
+                    <div class="fold-3d fold-3d-bottom bottom-wrapper">
+                        <div class="fold fold-bottom" id="fold-bottom"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-debug" id="btn-debug">See Planes</button>
+        </div>
+    </main>
+    <script src="./js/imagesloaded.pkgd.min.js"></script>
+    <script src="./js/follow.js"></script>
+</body>
+
+</html>
