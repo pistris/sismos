@@ -12,6 +12,13 @@
     href="https://fonts.googleapis.com/css?family=Roboto:400,500,700%7cRubik:400,500,700&display=swap">
   <link rel="stylesheet" href="assets/css/libraries.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/bsg5ydy.css">
+  <link rel="stylesheet" type="text/css" href="css/base.css" />
+  <script>
+		document.documentElement.className = "js";
+		var supportsCssVars = function() { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
+		supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+		</script>
 </head>
 
 <body>
@@ -19,144 +26,180 @@
     <!-- =========================
         Header
     =========================== -->
-    <header id="header" class="header header-transparent">
-      <nav class="navbar navbar-expand-lg sticky-navbar">
+    <header id="header" class="header header-white header-full header-full-layout2">
+      <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand" href="index.html">
             <img src="assets/images/logo/logo-light.png" class="logo-light" alt="logo">
             <img src="assets/images/logo/logo-dark.png" class="logo-dark" alt="logo">
           </a>
+          <div class="header__topbar d-none d-lg-block">
+            <div class="d-flex flex-wrap">
+              <ul class="contact__list list-unstyled">
+                <li>
+                  <i class="icon-phone"></i>
+                  <div>
+                    <span>Call Us:</span><strong>+55 654 541 17</strong>
+                  </div>
+                </li>
+                <li>
+                  <i class="icon-envelope2"></i>
+                  <div>
+                    <span>Email Us:</span><strong>Industic@7oroof.com</strong>
+                  </div>
+                </li>
+                <li>
+                  <i class="icon-clock1"></i>
+                  <div>
+                    <span>Opening Hours:</span><strong>Mon-Fri: 8am – 7pm</strong>
+                  </div>
+                </li>
+              </ul>
+              <a href="request-quote.html" class="btn btn__secondary module__btn-request">
+                <span>Request A Quote</span><i class="icon-arrow-right2"></i>
+              </a>
+            </div>
+          </div><!-- /.header-topbar -->
           <button class="navbar-toggler" type="button">
             <span class="menu-lines"><span></span></span>
           </button>
-          <div class="collapse navbar-collapse" id="mainNavigation">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav__item with-dropdown">
-                <a href="index.html" class="dropdown-toggle nav__item-link active">Home</a>
-                <i class="fa fa-angle-right" data-toggle="dropdown"></i>
-                <ul class="dropdown-menu">
-                  <li class="nav__item"><a href="index.html" class="nav__item-link">Home Main</a></li>
-                  <!-- /.nav-item -->
-                  <li class="nav__item"><a href="home-modern.html" class="nav__item-link">Home Moderm</a></li>
-                  <!-- /.nav-item -->
-                  <li class="nav__item"><a href="home-classic.html" class="nav__item-link">Home classic</a></li>
-                  <!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
-              </li><!-- /.nav-item -->
-              <li class="nav__item with-dropdown">
-                <a href="about-us.html" class="dropdown-toggle nav__item-link">Company</a>
-                <i class="fa fa-angle-right" data-toggle="dropdown"></i>
-                <ul class="dropdown-menu">
-                  <li class="nav__item"><a href="about-us.html" class="nav__item-link">About Us</a></li>
-                  <!-- /.nav-item -->
-                  <li class="nav__item"><a href="why-us.html" class="nav__item-link">Why Choose Us</a></li>
-                  <!-- /.nav-item -->
-                  <li class="nav__item"><a href="leadership-team.html" class="nav__item-link">Leadership Team</a></li>
-                  <!-- /.nav-item -->
-                  <li class="nav__item"><a href="awards.html" class="nav__item-link">Award & Recognition</a>
-                  </li>
-                  <!-- /.nav-item -->
-                  <li class="nav__item"><a href="pricing.html" class="nav__item-link">Pricing & Plans</a></li>
-                  <!-- /.nav-item -->
-                  <li class="nav__item"><a href="faqs.html" class="nav__item-link">Help & FAQs</a></li>
-                  <!-- /.nav-item -->
-                  <li class="nav__item"><a href="careers.html" class="nav__item-link">careers</a></li>
-                  <!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
-              </li><!-- /.nav-item -->
-              <li class="nav__item with-dropdown">
-                <a href="Industries-industry-served.html" class="dropdown-toggle nav__item-link">Industries</a>
-                <i class="fa fa-angle-right" data-toggle="dropdown"></i>
-                <ul class="dropdown-menu wide-dropdown-menu">
-                  <li class="nav__item">
-                    <div class="row mx-0">
-                      <div class="col-sm-6 dropdown-menu-col">
-                        <h6>Industries Served</h6>
-                        <ul class="nav flex-column">
-                          <li class="nav__item"><a class="nav__item-link"
-                              href="industries-single-industry.html">Petroleum & Gas</a>
-                          </li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link"
-                              href="industries-single-industry.html">Construction &
-                              Engineering</a>
-                          </li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link"
-                              href="industries-single-industry.html">Mechanical
-                              Engineering</a>
-                          </li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link"
-                              href="industries-single-industry.html">Industrial
-                              Chemicals</a>
-                          </li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link"
-                              href="industries-single-industry.html">Automotive
-                              Manufacturing</a>
-                          </li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link" href="industries-single-industry.html">Bridge
-                              Construction</a></li>
-                          <!-- /.nav-item -->
-                        </ul>
-                      </div><!-- /.col-sm-6 -->
-                      <div class="col-sm-6 dropdown-menu-col">
-                        <h6>Industry Sectors</h6>
-                        <ul class="nav flex-column">
-                          <li class="nav__item"><a class="nav__item-link" href="single-industry.html">Retail &
-                              Consumer</a></li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link" href="single-industry.html">Sciences &
-                              Healthcare</a></li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link" href="single-industry.html">Industrial &
-                              Chemical</a></li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link" href="single-industry.html">Power
-                              Generation</a></li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link" href="single-industry.html">Food &
-                              Beverage</a></li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link" href="single-industry.html">Oil & Gas</a></li>
-                          <!-- /.nav-item -->
-                        </ul>
-                      </div><!-- /.col-sm-6 -->
-                    </div><!-- /.row -->
-                  </li><!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
-              </li><!-- /.nav-item -->
-              <li class="nav__item with-dropdown">
-                <a href="blog.html" class="dropdown-toggle nav__item-link">News & Media</a>
-                <i class="fa fa-angle-right" data-toggle="dropdown"></i>
-                <ul class="dropdown-menu">
-                  <li class="nav__item"><a href="blog.html" class="nav__item-link">Our Blog</a></li>
-                  <!-- /.nav-item -->
-                  <li class="nav__item"><a href="blog-single-post.html" class="nav__item-link">Single Blog Post</a></li>
-                  <!-- /.nav-item -->
-                  <li class="nav__item"><a href="case-studies-grid.html" class="nav__item-link">Case Studies Grid</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item"><a href="case-studies-carousel.html" class="nav__item-link">Case Studies
-                      Carousel</a></li><!-- /.nav-item -->
-                  <li class="nav__item"><a href="case-studies-single.html" class="nav__item-link">Single Case Study</a>
-                  </li><!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
-              </li><!-- /.nav-item -->
-              <li class="nav__item">
-                <a href="contacs.html" class="nav__item-link">Contacts</a>
-              </li><!-- /.nav-item -->
-            </ul><!-- /.navbar-nav -->
-          </div><!-- /.navbar-collapse -->
-          <div class="navbar-modules">
-            <ul class="list-unstyled d-flex align-items-center modules__btns-list">
-              <li><a href="#" class="module__btn module__btn-search"><i class="fa fa-search"></i></a></li>
-              <li class="d-none d-lg-block"><a href="request-quote.html" class="btn btn__primary module__btn-request">
-                  <span>Request A Quote</span><i class="icon-arrow-right2"></i>
-                </a></li>
-              <li class="d-none d-lg-block">
-                <div class="module__btn module__btn-phone d-flex align-items-center">
-                  <i class="icon-phone mr-3"></i>
-                  <div>
-                    <span class="d-block">Call Us:</span>
-                    <a href="tel:55-654-541-17">+55 654 541 17</a>
-                  </div>
-                </div>
-              </li>
-            </ul><!-- /.modules-wrapper -->
-          </div><!-- /.navbar-modules -->
         </div><!-- /.container -->
+        <div class="navbar__bottom  sticky-navbar">
+          <div class="container">
+            <div class="collapse navbar-collapse" id="mainNavigation">
+              <ul class="navbar-nav">
+                <li class="nav__item with-dropdown">
+                  <a href="index.html" class="dropdown-toggle nav__item-link active">Home</a>
+                  <i class="fa fa-angle-right" data-toggle="dropdown"></i>
+                  <ul class="dropdown-menu">
+                    <li class="nav__item"><a href="index.html" class="nav__item-link">Home Main</a></li>
+                    <!-- /.nav-item -->
+                    <li class="nav__item"><a href="home-modern.html" class="nav__item-link">Home Moderm</a></li>
+                    <!-- /.nav-item -->
+                    <li class="nav__item"><a href="home-classic.html" class="nav__item-link">Home classic</a></li>
+                    <!-- /.nav-item -->
+                  </ul><!-- /.dropdown-menu -->
+                </li><!-- /.nav-item -->
+                <li class="nav__item with-dropdown">
+                  <a href="about-us.html" class="dropdown-toggle nav__item-link">Company</a>
+                  <i class="fa fa-angle-right" data-toggle="dropdown"></i>
+                  <ul class="dropdown-menu">
+                    <li class="nav__item"><a href="about-us.html" class="nav__item-link">About Us</a></li>
+                    <!-- /.nav-item -->
+                    <li class="nav__item"><a href="why-us.html" class="nav__item-link">Why Choose Us</a></li>
+                    <!-- /.nav-item -->
+                    <li class="nav__item"><a href="leadership-team.html" class="nav__item-link">Leadership Team</a></li>
+                    <!-- /.nav-item -->
+                    <li class="nav__item"><a href="awards.html" class="nav__item-link">Award & Recognition</a>
+                    </li>
+                    <!-- /.nav-item -->
+                    <li class="nav__item"><a href="pricing.html" class="nav__item-link">Pricing & Plans</a></li>
+                    <!-- /.nav-item -->
+                    <li class="nav__item"><a href="faqs.html" class="nav__item-link">Help & FAQs</a></li>
+                    <!-- /.nav-item -->
+                    <li class="nav__item"><a href="careers.html" class="nav__item-link">careers</a></li>
+                    <!-- /.nav-item -->
+                  </ul><!-- /.dropdown-menu -->
+                </li><!-- /.nav-item -->
+                <li class="nav__item with-dropdown">
+                  <a href="Industries-industry-served.html" class="dropdown-toggle nav__item-link">Industries</a>
+                  <i class="fa fa-angle-right" data-toggle="dropdown"></i>
+                  <ul class="dropdown-menu wide-dropdown-menu">
+                    <li class="nav__item">
+                      <div class="row mx-0">
+                        <div class="col-sm-6 dropdown-menu-col">
+                          <h6>Industries Served</h6>
+                          <ul class="nav flex-column">
+                            <li class="nav__item"><a class="nav__item-link"
+                                href="industries-single-industry.html">Petroleum &
+                                Gas</a>
+                            </li> <!-- /.nav-item -->
+                            <li class="nav__item"><a class="nav__item-link"
+                                href="industries-single-industry.html">Construction &
+                                Engineering</a>
+                            </li> <!-- /.nav-item -->
+                            <li class="nav__item"><a class="nav__item-link"
+                                href="industries-single-industry.html">Mechanical
+                                Engineering</a>
+                            </li> <!-- /.nav-item -->
+                            <li class="nav__item"><a class="nav__item-link"
+                                href="industries-single-industry.html">Industrial
+                                Chemicals</a>
+                            </li> <!-- /.nav-item -->
+                            <li class="nav__item"><a class="nav__item-link"
+                                href="industries-single-industry.html">Automotive
+                                Manufacturing</a>
+                            </li> <!-- /.nav-item -->
+                            <li class="nav__item"><a class="nav__item-link"
+                                href="industries-single-industry.html">Bridge
+                                Construction</a></li>
+                            <!-- /.nav-item -->
+                          </ul>
+                        </div><!-- /.col-sm-6 -->
+                        <div class="col-sm-6 dropdown-menu-col">
+                          <h6>Industry Sectors</h6>
+                          <ul class="nav flex-column">
+                            <li class="nav__item"><a class="nav__item-link" href="single-industry.html">Retail &
+                                Consumer</a></li> <!-- /.nav-item -->
+                            <li class="nav__item"><a class="nav__item-link" href="single-industry.html">Sciences &
+                                Healthcare</a></li> <!-- /.nav-item -->
+                            <li class="nav__item"><a class="nav__item-link" href="single-industry.html">Industrial &
+                                Chemical</a></li> <!-- /.nav-item -->
+                            <li class="nav__item"><a class="nav__item-link" href="single-industry.html">Power
+                                Generation</a></li> <!-- /.nav-item -->
+                            <li class="nav__item"><a class="nav__item-link" href="single-industry.html">Food &
+                                Beverage</a></li> <!-- /.nav-item -->
+                            <li class="nav__item"><a class="nav__item-link" href="single-industry.html">Oil & Gas</a>
+                            </li>
+                            <!-- /.nav-item -->
+                          </ul>
+                        </div><!-- /.col-sm-6 -->
+                      </div><!-- /.row -->
+                    </li><!-- /.nav-item -->
+                  </ul><!-- /.dropdown-menu -->
+                </li><!-- /.nav-item -->
+                <li class="nav__item with-dropdown">
+                  <a href="blog.html" class="dropdown-toggle nav__item-link">News & Media</a>
+                  <i class="fa fa-angle-right" data-toggle="dropdown"></i>
+                  <ul class="dropdown-menu">
+                    <li class="nav__item"><a href="blog.html" class="nav__item-link">Our Blog</a></li>
+                    <!-- /.nav-item -->
+                    <li class="nav__item"><a href="blog-single-post.html" class="nav__item-link">Single Blog Post</a>
+                    </li>
+                    <!-- /.nav-item -->
+                    <li class="nav__item"><a href="case-studies-grid.html" class="nav__item-link">Case Studies Grid</a>
+                    </li><!-- /.nav-item -->
+                    <li class="nav__item"><a href="case-studies-carousel.html" class="nav__item-link">Case Studies
+                        Carousel</a></li><!-- /.nav-item -->
+                    <li class="nav__item"><a href="case-studies-single.html" class="nav__item-link">Single Case
+                        Study</a>
+                    </li><!-- /.nav-item -->
+                  </ul><!-- /.dropdown-menu -->
+                </li><!-- /.nav-item -->
+                <li class="nav__item">
+                  <a href="contacs.html" class="nav__item-link">Contacts</a>
+                </li><!-- /.nav-item -->
+              </ul><!-- /.navbar-nav -->
+            </div><!-- /.navbar-collapse -->
+            <div class="navbar-modules d-none d-lg-block">
+              <ul class="list-unstyled d-flex align-items-center modules__btns-list">
+                <li>
+                  <div class="social__icons">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                  </div>
+                </li>
+                <li>
+                  <form class="module__search-form">
+                    <input type="text" class="search__input" placeholder="Search...">
+                    <button class="module__btn module__btn-search"><i class="fa fa-search"></i></button>
+                  </form>
+                </li>
+              </ul><!-- /.modules-wrapper -->
+            </div><!-- /.navbar-modules -->
+          </div><!-- /.container -->
+        </div><!-- /.navbar-bottom -->
       </nav><!-- /.navabr -->
     </header><!-- /.Header -->
 
@@ -164,29 +207,129 @@
         Slider
     ============================== -->
     <section id="slider1" class="slider slider-1">
+      
         <div class="slide-item align-v-h bg-overlay">
-          <div class="bg-img"><img src="assets/images/sliders/1.jpg" alt="slide img"></div>
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                  <h3 class="slide__title" style="font-size: 50px;">PROTECCIÓN SISMICA DE MÉXICO</h3>
-                  <p class="slide__desc" style="text-align: justify;">
-                    Somos parte un grupo empresarial mexicano con mas de 15 años de experiencia en el sector de infraestructura publica y privada. 
-                    Estamos dedicados a encontrar soluciones que aseguren la resiliencia de las edificaciones, somos un binomio que combina la experiencia 
-                    y gran calidad de diseño italiano mediante nuestra representada FIP Industriale y la gran capacidad de solución de nuestra ingeniería 
-                    mexicana. 
-                  </p>
-                  <a class="btn btn__video popup-video" href="https://psismicamx.wixsite.com/psismicamx?wix-vod-video-id=9696f1fb394147f4a8f4512e29b8128d&wix-vod-comp-id=comp-jan6i3sd">
-                    <div class="video__player">
-                      <span class="video__player-animation"></span>
-                      <span class="video__player-animation video__player-animation-2"></span>
-                      <span class="video__player-animation video__player-animation-3"></span>
-                      <i class="fa fa-play"></i>
-                    </div>
-                  </a>
-              </div><!-- /.col-xl-5 -->
-            </div><!-- /.row -->
-          </div><!-- /.container -->
+          
+         <svg class="hidden">
+			<symbol id="icon-arrow" viewBox="0 0 24 24">
+				<title>arrow</title>
+				<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 " />
+			</symbol>
+			<symbol id="icon-drop" viewBox="0 0 24 24">
+				<title>drop</title>
+				<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z" />
+				<path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z" />
+			</symbol>
+		</svg>
+		<main>
+			<div class="message">Some message for mobile if needed.</div>
+		
+			<div class="slideshow">
+				<div class="slide">
+					<div class="slide__img-wrap">
+						<div class="slide__img" style="background-image: url(img/oaxaca.png);"></div>
+						<div class="slide__img-reveal"></div>
+					</div>
+					<div class="slide__title-wrap">
+						<h3 class="slide__title"><div class="slide__box"></div><span class="slide__title-inner">EDIFICIO U.E.C.S.</span></h3>
+						<h4 class="slide__subtitle"><div class="slide__box"></div><span class="slide__subtitle-inner"> Suministro los aisladores y consultoria para el diseño del Edificio</span></h4>
+						<p class="slide__quote"><em>"A masterpiece!"</em> &mdash; Robert Waters</p>
+						<a class="slide__explore"><span class="slide__explore-inner">Explore</span></a>
+					</div>
+					<span class="slide__number">01</span>
+					<div class="slide__side">
+						<span class="slide__info">Oaxaca de Juarez, Oaxaca &mdash; 2015</span>
+						<h5 class="slide__category"> MÉXICO  ***  </h5>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="slide__img-wrap">
+						<div class="slide__img" style="background-image: url(img/italia.jpg);"></div>
+						<div class="slide__img-reveal"></div>
+					</div>
+					<div class="slide__title-wrap">
+						<h3 class="slide__title"><div class="slide__box"></div><span class="slide__title-inner">C.A.S.E
+            </span></h3>
+						<h4 class="slide__subtitle"><div class="slide__box"></div><span class="slide__subtitle-inner">by Martin Quartz</span></h4>
+						<p class="slide__quote"><em>"Amazing symmetry"</em> &mdash; Dan Muller</p>
+						<a class="slide__explore"><span class="slide__explore-inner">ver</span></a>
+					</div>
+					<span class="slide__number">02</span>
+					<div class="slide__side">
+						<span class="slide__info">Road of the Blues &mdash; 2014</span>
+						<h5 class="slide__category">ITALIA  ***</h5>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="slide__img-wrap">
+						<div class="slide__img" style="background-image: url(img/3.jpg);"></div>
+						<div class="slide__img-reveal"></div>
+					</div>
+					<div class="slide__title-wrap">
+						<h3 class="slide__title"><div class="slide__box"></div><span class="slide__title-inner">Vernacular Blue</span></h3>
+						<h4 class="slide__subtitle"><div class="slide__box"></div><span class="slide__subtitle-inner">by John Tatin</span></h4>
+						<p class="slide__quote"><em>"A dream come true!"</em> &mdash; Robert Robber</p>
+						<a class="slide__explore"><span class="slide__explore-inner">Explore</span></a>
+					</div>
+					<span class="slide__number">03</span>
+					<div class="slide__side">
+						<span class="slide__info">Waldorfstrasse &mdash; 2016</span>
+						<h5 class="slide__category">Berlin, Germany</h5>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="slide__img-wrap">
+						<div class="slide__img" style="background-image: url(img/4.jpg);"></div>
+						<div class="slide__img-reveal"></div>
+					</div>
+					<div class="slide__title-wrap">
+						<h3 class="slide__title"><div class="slide__box"></div><span class="slide__title-inner">Miesian Skies</span></h3>
+						<h4 class="slide__subtitle"><div class="slide__box"></div><span class="slide__subtitle-inner">by Martha Brass</span></h4>
+						<p class="slide__quote"><em>"Ingenious joyfulness!"</em> &mdash; Mark Hudson</p>
+						<a class="slide__explore"><span class="slide__explore-inner">Explore</span></a>
+					</div>
+					<span class="slide__number">04</span>
+					<div class="slide__side">
+						<span class="slide__info">Carrer de la Virtut &mdash; 2012</span>
+						<h5 class="slide__category">Barcelona, Spain</h5>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="slide__img-wrap">
+						<div class="slide__img" style="background-image: url(img/5.jpg);"></div>
+						<div class="slide__img-reveal"></div>
+					</div>
+					<div class="slide__title-wrap">
+						<h3 class="slide__title"><div class="slide__box"></div><span class="slide__title-inner">Exurbia Wave</span></h3>
+						<h4 class="slide__subtitle"><div class="slide__box"></div><span class="slide__subtitle-inner">by Stacy Millet</span></h4>
+						<p class="slide__quote"><em>"Fantastic natural movements."</em> &mdash; Frank Puller</p>
+						<a class="slide__explore"><span class="slide__explore-inner">Explore</span></a>
+					</div>
+					<span class="slide__number">05</span>
+					<div class="slide__side">
+						<span class="slide__info">Fantasy Road &mdash; 2011</span>
+						<h5 class="slide__category">Dublin, Ireland</h5>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="slide__img-wrap">
+						<div class="slide__img" style="background-image: url(img/6.jpg);"></div>
+						<div class="slide__img-reveal"></div>
+					</div>
+					<div class="slide__title-wrap">
+						<h3 class="slide__title"><div class="slide__box"></div><span class="slide__title-inner">Partini Tower</span></h3>
+						<h4 class="slide__subtitle"><div class="slide__box"></div><span class="slide__subtitle-inner">by Walter Laftis</span></h4>
+						<p class="slide__quote"><em>"The modern tower of Pisa."</em> &mdash; Henriette Fleck</p>
+						<a class="slide__explore"><span class="slide__explore-inner">Explore</span></a>
+					</div>
+					<span class="slide__number">06</span>
+					<div class="slide__side">
+						<span class="slide__info">Via Disciplini &mdash; 2010</span>
+						<h5 class="slide__category">Milan, Italy</h5>
+					</div>
+				</div>
+			</div>
+		</main>
         </div><!-- /.slide-item -->
         
     </section><!-- /.slider -->
@@ -195,6 +338,7 @@
       About 2
     =========================== -->
     <section id="about2" class="about about-2 pt-0 pb-90">
+     
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 offset-xl-12">
@@ -208,15 +352,43 @@
           <div class="col-sm-12 col-md-12 col-lg-8">
             <div class="about__text mt-30">
               <p style="text-align: justify;">
-                Los aisladores sísmicos y otros disipadores, permiten elegir el nivel de comportamiento para tu edificio durante y
-                después de un sismo severo. Es decir, que el edificio puede ser diseñado incluso para quedar sin daño y ser utilizado
-                de manera normal a las pocas horas de un sismo severo.
+                Somos parte un grupo empresarial mexicano con mas de 15 años de experiencia en el sector de infraestructura publica y privada. Estamos dedicados a encontrar soluciones que aseguren la resiliencia de las edificaciones, somos un binomio que combina la experiencia y gran calidad de diseño italiano mediante nuestra representada FIP Industriale y la gran capacidad de solución de nuestra ingeniería mexicana.
                 </p>
             </div>
           </div><!-- /.col-lg-4 -->
           <div class="col-sm-12 col-md-8 col-lg-4">
             <img src="assets/imagenes/edificios.jpg" alt="about" class="img-fluid">
           </div><!-- /.col-lg-5 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.About 2 -->
+    <section id="about2" class="about about-2 pt-0 pb-90">
+     
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 offset-xl-12">
+            <div class="heading heading-3 mb-50">
+         
+     
+              <h2 class="heading__title">         <span class="heading__subtitle">LA MEJOR TECNOLOGÍA PARA SU SEGURIDAD Y TRANQUILIDAD</span></h2>
+            </div><!-- /heading -->
+          </div><!-- /.col-lg-9 -->
+        </div><!-- /.row -->
+        <div class="row">
+          <div class="col-sm-12 col-md-8 col-lg-4">
+            <img src="assets/imagenes/edificios.jpg" alt="about" class="img-fluid">
+          </div><!-- /.col-lg-5 -->
+
+          <div class="col-sm-12 col-md-12 col-lg-8">
+            <div class="about__text mt-30">
+              <p style="text-align: justify;">
+                Los aisladores sísmicos y otros disipadores, permiten elegir el nivel de comportamiento para tu edificio durante y
+                después de un sismo severo. Es decir, que el edificio puede ser diseñado incluso para quedar sin daño y ser utilizado
+                de manera normal a las pocas horas de un sismo severo.
+                </p>
+            </div>
+          </div><!-- /.col-lg-4 -->
+      
         </div><!-- /.row -->
       </div><!-- /.container -->
     </section><!-- /.About 2 -->
@@ -359,8 +531,8 @@
             <div class="col-sm-12 col-md-12 col-lg-4 footer__widget footer__widget-about  mb-30">
               <div class="footer__widget-content">
                 <img src="assets/images/logo/logo-footer.png" alt="logo">
-                <p>2307 Beverley Rd Brooklyn, New York <br>11226 United States.</p>
-                <p>Mail: <a href="mailto:Industic@7oroof.com">Industic@7oroof.com</a></p>
+                <p>Guillermo Prieto No 63. Col. San Rafael,  Del. Cuauhtémoc.  <br>Ciudad de México, México. C.P. 06470.</p>
+                <p>Mail: <a href="mailto:contacto@psismicamx.com">contacto@psismicamx.com</a></p>
                 <p><a href="tel:002010612457410" class="font-weight-bold color-white">(002) 010612457410</a></p>
               </div>
             </div><!-- /.col-lg-4 -->
@@ -460,6 +632,9 @@
   <script src="assets/js/jquery-3.3.1.min.js"></script>
   <script src="assets/js/plugins.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/TweenMax.min.js"></script>
+  <script src="js/demo.js"></script>
 </body>
 
 </html>
