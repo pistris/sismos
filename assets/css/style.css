@@ -5143,11 +5143,11 @@ textarea.form-control {
   height: 100%;
   opacity: 0.5;
   display: block;
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), #1b1a1a 100%);
+  /*background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), #1b1a1a 100%);*/
   background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), #1b1a1a 100%);
   background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), #1b1a1a 100%);
   background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), #1b1a1a 100%);
-  background-image: linear-gradient(top, rgba(0, 0, 0, 0), #1b1a1a 100%);
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0), #1b1a1a 100%); 
   -webkit-transition: all 0.4s linear;
   -moz-transition: all 0.4s linear;
   -ms-transition: all 0.4s linear;
